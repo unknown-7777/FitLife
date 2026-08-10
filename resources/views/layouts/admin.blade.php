@@ -83,11 +83,11 @@
             <i class="bi bi-calendar-check"></i> Workout Plans
         </a>
 
-        <hr style="border-color:rgba(255,255,255,0.1); margin: 10px 20px;">
+        <!--<hr style="border-color:rgba(255,255,255,0.1); margin: 10px 20px;">
 
         <a href="{{ route('dashboard') }}" class="nav-link">
             <i class="bi bi-arrow-left-circle"></i> Back to App
-        </a>
+        </a>-->
 
         <form method="POST" action="{{ route('logout') }}" class="mx-3 mt-2">
             @csrf

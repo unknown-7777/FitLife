@@ -94,11 +94,11 @@
 
         <hr style="border-color:rgba(255,255,255,0.1); margin: 10px 20px;">
 
-        @if(auth()->user()->isAdmin())
+        <!--@if(auth()->user()->isAdmin())
         <a href="{{ route('admin.dashboard') }}" class="nav-link">
             <i class="bi bi-shield-lock"></i> Admin Panel
         </a>
-        @endif
+        @endif-->
 
         <form method="POST" action="{{ route('logout') }}" class="mx-3 mt-2">
             @csrf

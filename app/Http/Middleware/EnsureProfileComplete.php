@@ -12,6 +12,11 @@ class EnsureProfileComplete
     {
         $user = auth()->user();
 
+        if ($user && $user->isAdmin()) 
+        {
+            return $next($request);
+        }
+
         if ($request->routeIs('profile.setup') ||
             $request->routeIs('profile.setup.save') ||
             $request->routeIs('logout')) {
